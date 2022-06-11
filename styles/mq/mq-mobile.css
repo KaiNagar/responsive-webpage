@@ -13,7 +13,7 @@
 
     .main-modal {
         position: fixed;
-        width: 100%;
+        width: 90%;
         height: 800px;
         background-color: var(--clr-footer);
         font-size: 1.5625rem;
