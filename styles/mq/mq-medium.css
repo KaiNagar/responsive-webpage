@@ -53,6 +53,9 @@
         background-color: var(--clr-border);
         transition: opacity 0.5s;
     }
+    .journy-content:hover .drop-down-list {
+        opacity:1;
+        }
     
 
 }
