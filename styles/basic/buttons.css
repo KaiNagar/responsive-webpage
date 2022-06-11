@@ -1,0 +1,17 @@
+.reading-btn {
+    border-radius: 20px;
+    color: var(--clr-btnT);
+    border: 2px solid var(--clr-btnT);
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reading-btn:hover {
+    width: 13.125rem;
+    border: 2px solid var(--clr-btnH);
+    color: var(--clr-btnH);
+}
+.menu-toggle{
+    cursor: pointer;
+}

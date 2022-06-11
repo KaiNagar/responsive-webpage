@@ -1,0 +1,39 @@
+@media (min-width:1200px) {
+    .main-header {
+        height: 130px;
+    }
+
+    .main-header .main-logo {
+        margin-inline-start: 24%;
+    }
+
+    .main-header .main-nav:nth-child(n-1)  {
+        margin-inline-end: 24%;
+    }
+
+    .main-header .main-nav>* {
+        padding-left:  40px;
+        padding-right:  40px;
+    }
+
+    .moving-pages {
+        margin-top: 5rem;
+        height: 81px;
+    }
+
+    .card {
+        max-width: 960px;
+        height: 318px;
+        margin-top: 4.09375rem;
+    }
+
+    .main-content {
+        max-width: 981px;
+    }
+
+    .reading-btn {
+        height: 2.5rem;
+        width: 11.625rem;
+    }
+
+}

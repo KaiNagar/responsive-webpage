@@ -1,0 +1,12 @@
+.moving-pages {
+    border: 1px solid var(--clr-border);
+}
+
+.moving-pages a {
+    color: var(--clr-btnP);
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 1.625rem;
+    padding-right: 1.625rem;
+}

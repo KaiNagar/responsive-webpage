@@ -1,0 +1,27 @@
+.main-footer {
+    height: 315px;
+    background-color: var(--clr-footer);
+    border-top: 1px solid var(--clr-border);
+}
+
+.main-footer .footer-logo {
+    font-size: 2.5rem;
+    font-family: eurofurence;
+    text-transform: capitalize;
+    color: var(--clr1);
+    margin-top: 3.875rem;
+}
+
+.main-footer small {
+    color: var(--clr-STxt);
+    font-size: 0.8125rem;
+    margin-top: 1.6875rem;
+}
+
+.main-footer .social-links {
+    margin-top: 2.3125rem;
+}
+
+.main-footer .social-links>*:not(:last-child) {
+    margin-inline-end: 20px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
+    <header class="main-header flex space-between align-center">
+        <div class="main-logo">Blogin<span>.</span></div>
+        <ul class="main-nav clean-list flex">
+            <li><a onclick="toggleSelected(this)" href="#">Journal</a></li>
+            <li><a onclick="toggleSelected(this)" href="#">About</a></li>
+            <li><a onclick="toggleSelected(this)" href="#">Work</a></li>
+            <li><a onclick="toggleSelected(this)" href="#">Contact</a></li>
+        </ul>
+        <button onclick="toggleMenu()" class="menu-toggle">☰</button>
+        
+        </header>
+
+    <main class="main-content column flex">
+        <div class="card flex">
+            <img class="card-img" src="photos/img2.png" alt="">
+            <div class="card-info flex column space-between">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commo doconsequat,sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nullapariatur...
+                </p>
+                <button onclick="onReadMore()" onmouseenter="btnTxtChange(this)" onmouseleave="btnTxtChangeBack(this)"
+                    class="reading-btn">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img class="card-img" src="photos/img1.png" alt="">
+            <div class="card-info flex column space-between">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commo doconsequat,sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatpariatur...
+                </p>
+                <button onclick="onReadMore()" onmouseenter="btnTxtChange(this)" onmouseleave="btnTxtChangeBack(this)"
+                    class="reading-btn">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img class="card-img" src="photos/img3.png" alt="">
+            <div class="card-info flex column space-between">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commo doconsequat,sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nullapariatur...
+                </p>
+                <button onclick="onReadMore()" onmouseenter="btnTxtChange(this)" onmouseleave="btnTxtChangeBack(this)"
+                    class="reading-btn">Continue Reading</button>
+            </div>
+        </div>
+        <div class="moving-pages flex space-between align-center">
+            <a class="next-page" href="#">⬅Previous</a href="#">
+            <a class="prev-page" href="#">Next➡</a href="#">
+        </div>
+    </main>
+    <footer class="main-footer flex column align-center">
+        <div class="footer-logo">Blogin<span class="selected">.</span></div>
+        <small>&copy; 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</small>
+        <div class="social-links flex">
+            <a target="_blank" href="https://www.facebook.com">
+                <div class="icon facebook flex align-center content-center">
+                    <img class="symbol" src="photos/icons/logos/F.png" alt="">
+                </div>
+            </a>
+            <a target="_blank" href="https://twitter.com/home">
+                <div class="icon twitter flex align-center content-center">
+                    <img class="symbol" src="photos/icons/logos/L.png" alt="">
+                </div>
+            </a>
+            <a target="_blank" href="https://www.behance.net/">
+                <div class="icon behance flex align-center content-center">
+                    <img class="symbol" src="photos/icons/logos/E.png" alt="">
+                </div>
+            </a>
+            <a target="_blank" href="https://dribbble.com/">
+                <div class="icon dribble flex align-center content-center">
+                    <img class="symbol" src="photos/icons/logos/D.png" alt="">
+                </div>
+            </a>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+        function toggleSelected(el) {
+            el.classList.toggle('selected')
+        }
+
+        function btnTxtChange(el) {
+            el.innerText = 'Continue Reading ➡'
+        }
+        function btnTxtChangeBack(el) {
+            el.innerText = 'Continue Reading'
+        }
+
+        function onReadMore() {
+            console.log('Go Read More!!');
+        }
+
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+            var menuBtn = document.querySelector('.menu-toggle');
+            if(menuBtn.innerText === '☰') menuBtn.innerText = '✖'
+            else if(menuBtn.innerText === '✖') menuBtn.innerText = '☰'
+        }
+
+    </script>
+</body>
+
+</html>

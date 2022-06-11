@@ -1,0 +1,31 @@
+.main-header {
+    background-color: var(--clr1);
+    color: var(--clr2);
+}
+
+.main-nav li a:hover {
+    color: var(--clr-green);
+}
+
+.main-header .main-logo {
+    font-family: eurofurence;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    line-height: 0.96;
+}
+
+.main-header .main-logo span {
+    color: var(--clr-green);
+}
+
+.main-header a {
+    color: var(--clr2);
+}
+
+.main-header a:hover {
+    color: var(--clr2);
+}
+
+.main-header .main-nav .selected {
+    color: var(--clr-green);
+}

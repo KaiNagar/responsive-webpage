@@ -1,0 +1,74 @@
+@media (max-width:950px) {
+    .menu-toggle {
+        margin-inline-end: 10%;
+    }
+
+    .main-nav li{
+        background-color: var(--clr-STxt);
+        width: 90%;
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 50px;
+        /* height: 100vh; */
+        background-color: transparent;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        border-inline-start: 1px solid #ccc;
+        transform: translateX(100%);
+        transition: transform .6s, box-shadow .6s;
+        flex-direction: column;
+    }
+    
+    .main-nav > *{
+        margin-top: 0.5rem;
+        margin-inline-start: 0.5rem;
+        font-size: 1.25rem;
+    }
+
+    body.menu-open .main-nav {
+        box-shadow: -6px 0px 17px rgb(0 0 0 / 19%);
+        transform: translateX(0);
+    }
+
+    .main-header {
+        height: 50px;
+    }
+
+    .main-header .main-logo {
+        margin-inline-start: 10%;
+    }
+
+    .main-header .main-nav:last-child {
+        margin-inline-end: 10%;
+    }
+
+    .moving-pages {
+        margin-top: 2rem;
+        height: 40px;
+    }
+
+    .card {
+        flex-direction: column;
+        max-width: 620px;
+        height: 600px;
+        margin-top: 1rem;
+        padding-inline-end: 1rem;
+        padding-inline-start: 1rem;
+    }
+
+    .card .card-img {
+        margin-bottom: 1rem;
+    }
+
+    .reading-btn {
+        height: 1.8rem;
+        width: 9rem;
+    }
+
+}

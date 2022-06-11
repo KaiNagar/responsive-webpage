@@ -1,0 +1,5 @@
+.card .card-title {
+    color: var(--clr3);
+    text-transform: uppercase;
+}
+

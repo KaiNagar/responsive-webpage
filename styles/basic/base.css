@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+html {
+    font-family: lato;
+    color: var(--clr3);
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-footer a {
+    color: var(--clr3);
+}
+
+img {
+    width: 100%;
+}

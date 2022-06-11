@@ -1,0 +1,42 @@
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--clr-border);
+    background-color: var(--clr-iconBG);
+}
+
+.facebook .symbol {
+    height: 14px;
+    width: 8px;
+}
+
+.twitter .symbol {
+    height: 10.7px;
+    width: 15.5px;
+}
+
+.behance .symbol {
+    height: 9.7px;
+    width: 15.6px;
+}
+
+.dribble .symbol {
+    height: 12.9px;
+    width: 12.9px;
+}
+
+.facebook:hover {
+    background-color: var(--clr-FB);
+}
+
+.twitter:hover {
+    background-color: var(--clr-twitter);
+}
+
+.behance:hover {
+    background-color: var(--clr-behance);
+}
+
+.dribble:hover {
+    background-color: var(--clr-dribble);
+}
