@@ -12,6 +12,7 @@
 <body>
 
     <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="modal-screen" onclick="tooggleModal()"></div>
 
     <header class="main-header flex space-between align-center">
         <div class="main-logo">Blogin<span>.</span></div>
@@ -22,10 +23,25 @@
             <li><a onclick="toggleSelected(this)" href="#">Contact</a></li>
         </ul>
         <button onclick="toggleMenu()" class="menu-toggle">☰</button>
-        
-        </header>
+
+    </header>
 
     <main class="main-content column flex">
+
+        <div class="main-modal flex content-center align-center">
+            <div class="modal-content flex column">
+                <h3>Join us to get access to the latest stories!</h3>
+                <div class="modal-info flex column align-center">
+                    <label for="email-setup">Email:</label>
+                    <input type="email" id="email-setup" placeholder="Enter your email here...">
+                </div>
+                <div class="modal-btns flex content-center">
+                    <button onclick="closeMainModal()" class="close-modal-btn">Close</button>
+                    <button onclick="submitSubsciption()" class="submit-email-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
         <div class="card flex">
             <img class="card-img" src="photos/img2.png" alt="">
             <div class="card-info flex column space-between">
@@ -120,13 +136,25 @@
 
         function onReadMore() {
             console.log('Go Read More!!');
+            document.body.classList.add('modal-open')
         }
 
         function toggleMenu() {
             document.body.classList.toggle('menu-open');
             var menuBtn = document.querySelector('.menu-toggle');
-            if(menuBtn.innerText === '☰') menuBtn.innerText = '✖'
-            else if(menuBtn.innerText === '✖') menuBtn.innerText = '☰'
+            if (menuBtn.innerText === '☰') menuBtn.innerText = '✖'
+            else if (menuBtn.innerText === '✖') menuBtn.innerText = '☰'
+        }
+        function tooggleModal(){
+            document.body.classList.toggle('modal-open');
+        }
+
+        function closeMainModal(){
+            document.body.classList.remove('modal-open')
+        }
+        function submitSubsciption(){
+            document.body.classList.remove('modal-open')
+
         }
 
     </script>

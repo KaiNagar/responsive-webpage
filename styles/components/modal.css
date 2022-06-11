@@ -1,0 +1,41 @@
+
+.main-modal input{
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--clr-border);
+}
+.main-modal label{
+    margin-top: 4rem;
+}
+
+.modal-open{
+    transform: translateX(0);
+}
+
+.main-modal .modal-btns button {
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid var(--clr-border);
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 4rem;
+}
+
+
+.main-modal .close-modal-btn {
+    background-color: rgb(206, 67, 67);
+}
+
+.main-modal .close-modal-btn:hover {
+    background-color: rgb(222, 165, 165);
+}
+
+.main-modal .submit-email-btn {
+    background-color: rgb(94, 214, 90);
+}
+
+.main-modal .submit-email-btn:hover {
+    background-color: rgb(159, 216, 157);
+}

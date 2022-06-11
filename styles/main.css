@@ -15,9 +15,14 @@
 @import 'components/screen.css';
 @import 'components/pages.css';
 @import 'components/main-content.css';
+@import 'components/modal.css';
+@import 'components/modal-screen.css';
 
 /* mq */
 @import 'mq/mq-mobile.css';
 @import 'mq/mq-small.css';
 @import 'mq/mq-medium.css';
 @import 'mq/mq-large.css';
+
+
+

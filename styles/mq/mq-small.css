@@ -8,4 +8,16 @@
         width: 9rem;
         margin-top: 0.8rem;
     }
+    .main-modal {
+        position: fixed;
+        width: 600px;
+        height: 500px;
+        background-color: var(--clr-footer);
+        font-size: 1.5625rem;
+        border: 2px solid var(--clr3);
+        border-radius: 10px;
+        align-self: center;
+        transform: translateY(400%);
+        transition: transform .6s;
+    }
 }
