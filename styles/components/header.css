@@ -29,3 +29,25 @@
 .main-header .main-nav .selected {
     color: var(--clr-green);
 }
+
+
+
+/* drop-down-list */
+
+.drop-down-list a {
+    color: var(--clr3);
+    padding: 5px;
+}
+
+.drop-down-list a:hover {
+    color: var(--clr-green);
+}
+
+.journy-content {
+    position: relative;
+    display: inline-block;
+}
+
+.journy-content:hover .drop-down-list {
+opacity:1;
+}

@@ -17,7 +17,14 @@
     <header class="main-header flex space-between align-center">
         <div class="main-logo">Blogin<span>.</span></div>
         <ul class="main-nav clean-list flex">
-            <li><a onclick="toggleSelected(this)" href="#">Journal</a></li>
+            <div onclick="toggleJournyList()" class="journy-content">
+                <li><a class="journy-list" onclick="toggleSelected(this)" href="#">Journal</a></li>
+                <div class="drop-down-list flex column">
+                    <a href="#">October 2016</a>
+                    <a href="#">April 2017</a>
+                    <a href="#">July 2017</a>
+                </div>
+            </div>
             <li><a onclick="toggleSelected(this)" href="#">About</a></li>
             <li><a onclick="toggleSelected(this)" href="#">Work</a></li>
             <li><a onclick="toggleSelected(this)" href="#">Contact</a></li>
@@ -145,16 +152,23 @@
             if (menuBtn.innerText === '☰') menuBtn.innerText = '✖'
             else if (menuBtn.innerText === '✖') menuBtn.innerText = '☰'
         }
-        function tooggleModal(){
+        function tooggleModal() {
             document.body.classList.toggle('modal-open');
         }
 
-        function closeMainModal(){
+        function closeMainModal() {
             document.body.classList.remove('modal-open')
         }
-        function submitSubsciption(){
+        function submitSubsciption() {
             document.body.classList.remove('modal-open')
-
+        }
+        function toggleJournyList() {
+            if (document.querySelector('.drop-down-list').style.display === '') {
+                document.querySelector('.drop-down-list').style.display = 'flex'
+            }
+            else if(document.querySelector('.drop-down-list').style.display){
+                document.querySelector('.drop-down-list').style.display = ''
+            }
         }
 
     </script>
