@@ -24,7 +24,8 @@
         transition: transform .6s;
     }
     .modal-content{
-        width: 80%;
+        text-align: center;
+        width: 85%;
     }
 
     .main-nav {
