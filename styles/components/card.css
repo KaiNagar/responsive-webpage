@@ -2,4 +2,6 @@
     color: var(--clr3);
     text-transform: uppercase;
 }
-
+.card .card-img{
+    object-fit: cover;
+}

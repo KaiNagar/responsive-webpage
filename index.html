@@ -14,29 +14,31 @@
     <div class="main-screen" onclick="toggleMenu()"></div>
     <div class="modal-screen" onclick="tooggleModal()"></div>
 
-    <header class="main-header flex space-between align-center">
-        <div class="main-logo">Blogin<span>.</span></div>
-        <ul class="main-nav clean-list flex">
-            <div onclick="toggleJournyList()" class="journy-content">
-                <li><a class="journy-list" onclick="toggleSelected(this)" href="#">Journal</a></li>
-                <div class="drop-down-list flex column">
-                    <a href="#">October 2016</a>
-                    <a href="#">April 2017</a>
-                    <a href="#">July 2017</a>
+    <header class="main-header ">
+        <div class="header-content main-layout flex space-between align-center">
+            <div class="main-logo">Blogin<span>.</span></div>
+            <ul class="main-nav clean-list flex">
+                <div onclick="toggleJournyList()" class="journy-content">
+                    <li onclick="toggleSelected(this)"><a class="journy-list"  href="#">Journal</a></li>
+                    <div class="drop-down-list flex column">
+                        <a href="#">October 2016</a>
+                        <a href="#">April 2017</a>
+                        <a href="#">July 2017</a>
+                    </div>
                 </div>
-            </div>
-            <li><a onclick="toggleSelected(this)" href="#">About</a></li>
-            <li><a onclick="toggleSelected(this)" href="#">Work</a></li>
-            <li><a onclick="toggleSelected(this)" href="#">Contact</a></li>
-        </ul>
-        <button onclick="toggleMenu()" class="menu-toggle">☰</button>
+                <li onclick="toggleSelected(this)"><a href="#">About</a></li>
+                <li onclick="toggleSelected(this)"><a href="#">Work</a></li>
+                <li onclick="toggleSelected(this)"><a href="#">Contact</a></li>
+            </ul>
+            <button onclick="toggleMenu()" class="menu-toggle">☰</button>
+        </div>
 
     </header>
 
-    <main class="main-content column flex">
+    <main class="main-content main-layout column flex ">
 
         <div class="main-modal flex content-center align-center">
-            <div class="modal-content flex column">
+            <div class="modal-content  flex column">
                 <h3>Join us to get access to the latest stories!</h3>
                 <div class="modal-info flex column align-center">
                     <label for="email-setup">Email:</label>
@@ -49,7 +51,7 @@
             </div>
         </div>
 
-        <div class="card flex">
+        <div class="card card-layout flex">
             <img class="card-img" src="photos/img2.png" alt="">
             <div class="card-info flex column space-between">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
@@ -60,11 +62,11 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                     nullapariatur...
                 </p>
-                <button onclick="onReadMore()" onmouseenter="btnTxtChange(this)" onmouseleave="btnTxtChangeBack(this)"
-                    class="reading-btn">Continue Reading</button>
+                <button onclick="onReadMore()"
+                    class="reading-btn btn-arrow">Continue Reading</button>
             </div>
         </div>
-        <div class="card flex">
+        <div class="card card-layout flex">
             <img class="card-img" src="photos/img1.png" alt="">
             <div class="card-info flex column space-between">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
@@ -74,11 +76,11 @@
                     <br>
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatpariatur...
                 </p>
-                <button onclick="onReadMore()" onmouseenter="btnTxtChange(this)" onmouseleave="btnTxtChangeBack(this)"
-                    class="reading-btn">Continue Reading</button>
+                <button onclick="onReadMore()"
+                    class="reading-btn btn-arrow">Continue Reading</button>
             </div>
         </div>
-        <div class="card flex">
+        <div class="card card-layout flex">
             <img class="card-img" src="photos/img3.png" alt="">
             <div class="card-info flex column space-between">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
@@ -89,8 +91,8 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                     nullapariatur...
                 </p>
-                <button onclick="onReadMore()" onmouseenter="btnTxtChange(this)" onmouseleave="btnTxtChangeBack(this)"
-                    class="reading-btn">Continue Reading</button>
+                <button onclick="onReadMore()"
+                    class="reading-btn btn-arrow">Continue Reading</button>
             </div>
         </div>
         <div class="moving-pages flex space-between align-center">
@@ -134,13 +136,6 @@
             el.classList.toggle('selected')
         }
 
-        function btnTxtChange(el) {
-            el.innerText = 'Continue Reading ➡'
-        }
-        function btnTxtChangeBack(el) {
-            el.innerText = 'Continue Reading'
-        }
-
         function onReadMore() {
             console.log('Go Read More!!');
             document.body.classList.add('modal-open')
@@ -166,12 +161,13 @@
             if (document.querySelector('.drop-down-list').style.display === '') {
                 document.querySelector('.drop-down-list').style.display = 'flex'
             }
-            else if(document.querySelector('.drop-down-list').style.display){
+            else if (document.querySelector('.drop-down-list').style.display) {
                 document.querySelector('.drop-down-list').style.display = ''
             }
         }
 
     </script>
+    <script src="https://kit.fontawesome.com/2e17e04cef.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

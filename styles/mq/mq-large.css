@@ -1,39 +1,33 @@
-@media (min-width:1200px) {
-    .main-header {
-        height: 130px;
+@media (min-width:1000px) {
+    .main-layout {
+        max-width: 980px;
     }
 
-    .main-header .main-logo {
-        margin-inline-start: 24%;
-    }
-
-    .main-header .main-nav:nth-child(n-1)  {
-        margin-inline-end: 24%;
-    }
-
-    .main-header .main-nav>* {
-        padding-left:  40px;
-        padding-right:  40px;
+    .card-layout {
+        max-width: 960px;
     }
 
     .moving-pages {
         margin-top: 5rem;
-        height: 81px;
+    }
+
+    .main-header li {
+        width: 130px;
+        height: 130px;
     }
 
     .card {
-        max-width: 960px;
-        height: 318px;
         margin-top: 4.09375rem;
     }
 
-    .main-content {
-        max-width: 981px;
+    .moving-pages .next-btn,
+    .moving-pages .prev-page {
+        padding: 26px;
     }
 
-    .reading-btn {
-        height: 2.5rem;
-        width: 11.625rem;
-    }
+    /* .reading-btn { */
+    /* height: 5.0625rem;
+        width: 11.625rem; */
+    /* } */
 
 }

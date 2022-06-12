@@ -1,28 +1,26 @@
 @media (min-width:950px) {
-    .main-header {
+    .main-layout{
+        max-width: 900px;
+    }
+    .card-layout{
+        max-width: 900px;
+    }
+    .main-header li {
+        width: 80px;
         height: 80px;
-    }
-
-    .main-header .main-logo {
-        margin-inline-start: 12%;
-    }
-
-    .main-header .main-nav:nth-child(n-1) {
-        margin-inline-end: 12%;
-    }
-
-    .main-header .main-nav>* {
-        padding: 0 30px;
     }
 
     .moving-pages {
         margin-top: 3rem;
-        height: 60px;
+    }
+
+    .moving-pages .next-btn,
+    .moving-pages .prev-page {
+        padding: 19px;
     }
 
     .card {
-        max-width: 900px;
-        height: 270px;
+        flex-basis: 50%;
         margin-top: 3rem;
     }
 
@@ -30,19 +28,29 @@
         padding-inline-end: 2.5rem;
     }
 
-    .main-content {
-        max-width: 920px;
-    }
-
     .menu-toggle {
         display: none;
     }
-
+    /* ----------------------------------- */
     .main-modal {
-        position:fixed;
+        position: fixed;
+        top: -1000px;
+        width: 600px;
+        height: 500px;
+        background-color: var(--clr-footer);
+        font-size: 1.5625rem;
+        border: 2px solid var(--clr3);
+        border-radius: 10px;
+        align-self: center;
+        transition: top .6s;
+    }
+    .main-modal {
         width: 600px;
         height: 500px;
     }
+
+
+    /* ----------------------------- */
     .main-header .main-nav .drop-down-list {
         opacity: 0;
         position: absolute;

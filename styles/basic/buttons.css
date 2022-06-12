@@ -1,17 +1,42 @@
 .reading-btn {
-    border-radius: 20px;
+    border-radius: 2em;
     color: var(--clr-btnT);
     border: 2px solid var(--clr-btnT);
     background-color: transparent;
     font-weight: bold;
     cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.4s;
+    font-size: 1em;
+    padding: 0 1.4em;
+    line-height:2.5em ;
 }
 
+
 .reading-btn:hover {
-    width: 13.125rem;
+    position: relative;
     border: 2px solid var(--clr-btnH);
     color: var(--clr-btnH);
+    
 }
+.btn-arrow{
+    position: relative;
+    transition: all 0.4s;
+}
+.btn-arrow:hover{
+    position: relative;
+    padding-right: 3.4em;
+}
+.btn-arrow:hover::after{
+    content:'➡';
+    position: absolute;
+    right: 20px;
+}
+
 .menu-toggle{
     cursor: pointer;
+}
+
+.prev-page:hover , .next-page:hover{
+    color: var(--clr-btnH);
 }

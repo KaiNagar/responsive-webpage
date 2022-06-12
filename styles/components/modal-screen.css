@@ -16,6 +16,4 @@ body.modal-open .modal-screen{
     opacity: 1;
 }
 
-body.modal-open .main-modal {
-    transform: translateY(0);
-}
+

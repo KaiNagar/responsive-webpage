@@ -1,44 +1,52 @@
 @media (max-width:950px) {
-    .menu-toggle {
-        margin-inline-end: 10%;
+    html {
+        font-size: 21px;
     }
+
+    .main-layout {
+        max-width: 740px;
+    }
+
+    .card-layout {
+        max-width: 740px;
+    }
+
+    .menu-toggle {
+        background-color: var(--clr-green);
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 4px 4px 5px 4px #000;
+        margin-bottom: 1rem;
+    }
+
+    .main-header .main-nav {
+        align-items: center;
+    }
+
 
     .main-nav li {
         background-color: var(--clr-STxt);
         width: 90%;
-        height: 50px;
-        padding: 10px;
+        padding: 1rem;
         text-align: center;
     }
 
-    .main-modal {
-        position: fixed;
-        width: 100%;
-        height: 800px;
-        background-color: var(--clr-footer);
-        font-size: 1.5625rem;
-        border: 2px solid var(--clr3);
-        border-radius: 10px;
-        align-self: center;
-        transform: translateY(400%);
-        transition: transform .6s;
-    }
-
-    .modal-content {
-        text-align: center;
-        width: 85%;
-    }
+    
 
     .main-nav {
         position: fixed;
-        top: 50px;
+        top: 2.6rem;
+        right: 0.3rem;
         background-color: transparent;
         width: 100%;
         align-items: center;
         flex-direction: column;
         border-inline-start: 1px solid #ccc;
         transform: translateX(100%);
-        transition: transform .6s, box-shadow .6s;
+        transition: transform .6s;
         flex-direction: column;
     }
 
@@ -53,46 +61,24 @@
         transform: translateX(0);
     }
 
-    .main-header {
-        height: 50px;
-    }
-
-    .main-header .main-logo {
-        margin-inline-start: 10%;
-    }
-
-    .main-header .main-nav:last-child {
-        margin-inline-end: 10%;
+    .moving-pages .next-btn,
+    .moving-pages .prev-page {
+        padding: 9px;
     }
 
     .moving-pages {
         margin-top: 2rem;
-        height: 40px;
     }
 
-    .card {
-        flex-direction: column;
-        max-width: 620px;
-        height: 650px;
-        margin-top: 1rem;
-        padding-inline-end: 1rem;
-        padding-inline-start: 1rem;
-    }
+
 
     .card .card-img {
         margin-bottom: 1rem;
     }
 
-    .reading-btn {
-        height: 1.8rem;
-        width: 9rem;
-    }
-
     .main-header .main-nav .journy-content {
         width: 100%;
-        margin-inline-start: 10%;
     }
-
 
     .main-header .main-nav .drop-down-list {
         display: none;
@@ -102,5 +88,25 @@
         text-align: center;
         padding: 0;
         background-color: var(--clr-border);
+    }
+    
+
+
+    /* --------------------------------- */
+    .modal-content {
+        text-align: center;
+        width: 85%;
+    }
+    .main-modal {
+        position: fixed;
+        top: -1000px;
+        width: 100%;
+        height: 800px;
+        background-color: var(--clr-footer);
+        font-size: 1.5625rem;
+        border: 2px solid var(--clr3);
+        border-radius: 10px;
+        align-self: center;
+        transition: top .6s;
     }
 }

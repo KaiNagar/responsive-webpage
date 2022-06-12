@@ -1,10 +1,37 @@
 .main-header {
     background-color: var(--clr1);
+    box-shadow: inset 0px -6px var(--clr-black);
     color: var(--clr2);
+    width: 100%;
+}
+.header-content {
+    margin: auto;
 }
 
-.main-nav li a:hover {
-    color: var(--clr-green);
+.main-nav li:hover a {
+    color: var(--clr-green);   
+}
+
+.main-nav li:hover{
+    box-shadow: inset 0px -6px var(--clr-green);
+    cursor: pointer;
+}
+.main-nav li.selected a {
+    color: var(--clr-green);  
+}
+.main-nav li.selected{
+    cursor: default; 
+}
+
+.main-header li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-inline-end:2px solid var(--clr-black) ;
+    transition: all 0.4s;
+}
+.main-header li:first-child{
+    border-inline-start:2px solid var(--clr-black) ;
 }
 
 .main-header .main-logo {
@@ -22,17 +49,16 @@
     color: var(--clr2);
 }
 
-.main-header a:hover {
-    color: var(--clr2);
-}
-
 .main-header .main-nav .selected {
     color: var(--clr-green);
 }
 
-
-
 /* drop-down-list */
+
+.drop-down-list{
+    margin: auto;
+    width: 100%;
+}
 
 .drop-down-list a {
     color: var(--clr3);
@@ -46,6 +72,9 @@
 .journy-content {
     position: relative;
     display: inline-block;
+}
+.journy-content li:first-child{
+    margin: auto;
 }
 
 
